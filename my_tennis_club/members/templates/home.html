@@ -1,0 +1,5 @@
+<!-- Your home template -->
+{% for tennis_court in tennis_courts %}
+    <h2>{{ tennis_court.name }}</h2>
+    <a href="{% url 'reservation' tennis_court.id %}">Reserve</a>
+{% endfor %}

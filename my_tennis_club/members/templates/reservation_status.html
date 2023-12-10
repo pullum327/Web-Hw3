@@ -1,0 +1,4 @@
+<h2>Your Reservations</h2>
+{% for reservation in reservations %}
+    <p>{{ reservation.user.username }} - {{ reservation.reservation_date }} at {{ reservation.reservation_time }} - {{ reservation.court.name }}</p>
+{% endfor %}

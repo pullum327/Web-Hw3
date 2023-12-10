@@ -1,0 +1,7 @@
+<p><a href="/">HOME</a></p>
+<h1>Tennis Courts</h1>
+<ul>
+  {% for court in courts %}
+    <li><a href="{% url 'court_detail' court.id %}">{{ court.name }}</a></li>
+  {% endfor %}
+</ul>
